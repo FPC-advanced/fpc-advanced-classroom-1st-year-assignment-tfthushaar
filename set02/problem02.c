@@ -10,9 +10,9 @@ int process(float s1, float s2, float s3)
 {
     int isscalene=0;
 if(s1==s2 && s2==s3){
-printf("\nthe triangle is an equilateral triangle");
+printf("\nthe triangle is not a scalene triangle");
 }
-else if(s1==s2||s2==s3||s1==s3){printf("\nthe triangle is an isoceles triangle");}
+else if(s1==s2||s2==s3||s1==s3){printf("\nthe triangle is not a scalene triangle");}
 else{printf("\nthe triangle is a scalene triangle"); isscalene=1;}
 return isscalene;
 }
