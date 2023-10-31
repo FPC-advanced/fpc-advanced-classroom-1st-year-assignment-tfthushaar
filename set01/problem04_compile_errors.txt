@@ -1,0 +1,41 @@
+Compilation started at 10/31/2023, 11:12:51 AM
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c: In function 'input':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c: In function 'main':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c:22:11: warning: passing argument 1 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+     input(&a,&b);
+           ^
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c:2:6: note: expected 'int *' but argument is of type 'float *'
+ void input(int *a, int *b)
+      ^~~~~
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c:22:14: warning: passing argument 2 of 'input' from incompatible pointer type [-Wincompatible-pointer-types]
+     input(&a,&b);
+              ^
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c:2:6: note: expected 'int *' but argument is of type 'float *'
+ void input(int *a, int *b)
+      ^~~~~
+Compilation finished at 10/31/2023, 11:12:51 AM
+Compilation started at 10/31/2023, 11:14:52 AM
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c: In function 'input':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c:8:1: error: expected ';' before '}' token
+ }
+ ^
+Compilation finished at 10/31/2023, 11:14:53 AM
+Compilation started at 10/31/2023, 11:15:19 AM
+Compilation finished at 10/31/2023, 11:15:19 AM
+Compilation started at 10/31/2023, 11:15:47 AM
+Compilation finished at 10/31/2023, 11:15:47 AM
+Compilation started at 10/31/2023, 11:17:30 AM
+Compilation finished at 10/31/2023, 11:17:30 AM
+Compilation started at 10/31/2023, 11:18:38 AM
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c: In function 'input':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem04.c:7:16: error: invalid operands to binary & (have 'char *' and 'int')
+     scanf("%f" &*b);
+           ~~~~ ^~~
+Compilation finished at 10/31/2023, 11:18:39 AM
+Compilation started at 10/31/2023, 11:18:58 AM
+Compilation finished at 10/31/2023, 11:18:59 AM
+Compilation started at 10/31/2023, 11:21:49 AM
+Compilation finished at 10/31/2023, 11:21:49 AM
