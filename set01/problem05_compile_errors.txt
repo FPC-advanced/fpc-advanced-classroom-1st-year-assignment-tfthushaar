@@ -22,3 +22,9 @@ Compilation started at 10/31/2023, 11:56:24 AM
 Compilation finished at 10/31/2023, 11:56:25 AM
 Compilation started at 10/31/2023, 12:02:19 PM
 Compilation finished at 10/31/2023, 12:02:20 PM
+Compilation started at 10/31/2023, 12:03:50 PM
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem05.c: In function 'main':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem05.c:24:15: error: void value not ignored as it ought to be
+     int a,b,c=input();
+               ^~~~~
+Compilation finished at 10/31/2023, 12:03:50 PM
