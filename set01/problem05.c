@@ -1,12 +1,7 @@
 #include<stdio.h>
 int input(){
-    int a,b,c;
-    printf("enter the first number: ");
-    scanf("%d", &a);
-    printf("enter the second number: ");
-    scanf("%d", &b);
-    printf("enter the third number: ");
-    scanf("%d", &c);
+    int n;
+    
     return a;
 }
 int compare(int a, int b, int c) {
