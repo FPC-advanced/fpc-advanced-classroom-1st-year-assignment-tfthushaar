@@ -2,8 +2,8 @@
 int input(){
     int n;
     printf("enter the three numbers: ");
-    scanf("%d")
-    return a;
+    scanf("%d", &n);
+    return n;
 }
 int compare(int a, int b, int c) {
     int largest;
