@@ -17,3 +17,15 @@ warning: Source file is more recent than executable.
 28	}
 Line number 29 out of range; c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem05.c has 28 lines.
 Undefined set logging command: "enabled off".  Try "help set logging".
+warning: Source file is more recent than executable.
+13	    else if(b>a||b>c){largest=b;}
+14	    else if(c>a||c>b){largest=c;}
+15	    return largest;
+16	}
+17	void output(int a, int b, int c, int largest){
+18	    printf("the largest number between %d, %d and %d is %d", a,b,c,largest);
+19	}
+20	int main()
+21	{
+22	    int a=input();
+Undefined set logging command: "enabled off".  Try "help set logging".

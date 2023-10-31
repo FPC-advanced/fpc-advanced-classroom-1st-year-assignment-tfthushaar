@@ -2,9 +2,7 @@
 int input(){
     int a,b,c;
     printf("enter the three numbers: ");
-    scanf("%d, %d, %d", &a, );
-    scanf("%d", &b);
-    scanf("%d", &c);
+    scanf("%d, %d, %d", &a, &b, &c );
     return a;
 }
 int compare(int a, int b, int c){
