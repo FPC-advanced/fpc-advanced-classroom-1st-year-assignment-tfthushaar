@@ -5,7 +5,8 @@ int input(){
     scanf("%d", &a);
     printf("enter the second number: ");
     scanf("%d", &b);
-    print
+    printf("enter the third number: ");
+    scanf("%d", &c);
     return a;
 }
 int compare(int a, int b, int c){
