@@ -1,7 +1,9 @@
 #include<stdio.h>
 int input(){
     int a,b,c;
-    printf("enter the three numbers: ");
+    printf("enter the first number: ");
+    scanf("%d", &a);
+    
     return a;
 }
 int compare(int a, int b, int c){
