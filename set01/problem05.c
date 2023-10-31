@@ -3,7 +3,8 @@ int input(){
     int a,b,c;
     printf("enter the first number: ");
     scanf("%d", &a);
-    
+    printf("enter the second number: ");
+    scanf("")
     return a;
 }
 int compare(int a, int b, int c){
