@@ -21,9 +21,7 @@ void output(int a, int b, int c, int largest){
 }
 int main()
 {
-    int a=input();
-    int b=input();
-    int c=input();
+    int a,b,c=input();
     int largest=compare(a,b,c);
     output(a,b,c,largest);
     return 0;
