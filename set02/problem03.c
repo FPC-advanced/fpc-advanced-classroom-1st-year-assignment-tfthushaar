@@ -31,7 +31,7 @@ if(result == 0)
       }
       else
       {
-        printf("The number %d is not composite\n", n);
+        printf("The number %d is a prime number\n", n);
         }
 }
 int main(){
