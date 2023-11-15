@@ -1,0 +1,13 @@
+Compilation started at 11/15/2023, 8:03:33 PM
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem05.c: In function 'main':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem05.c:42:5: warning: implicit declaration of function 'eratosthenes_sieve' [-Wimplicit-function-declaration]
+     eratosthenes_sieve(n, a);
+     ^~~~~~~~~~~~~~~~~~
+C:\Users\thush\AppData\Local\Temp\cc1r4mgn.o: In function `main':
+c:/Users/thush/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-tfthushaar/set03/problem05.c:42: undefined reference to `eratosthenes_sieve'
+collect2.exe: error: ld returned 1 exit status
+Compilation finished at 11/15/2023, 8:03:34 PM
+Compilation started at 11/15/2023, 8:04:46 PM
+Compilation finished at 11/15/2023, 8:04:46 PM
+Compilation started at 11/15/2023, 8:05:21 PM
+Compilation finished at 11/15/2023, 8:05:22 PM
