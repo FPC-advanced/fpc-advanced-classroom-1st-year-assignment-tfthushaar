@@ -71,3 +71,54 @@ A debugging session is active.
 	Inferior 1 [process 18508] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++l
+warning: Source file is more recent than executable.
+11	    sum=a+b;
+12	    return sum;
+13	}
+14	void output(int a, int b, int sum){
+15	    printf("the sum of %d and %d is %d", a, b, sum);
+16	}
+17	int main()
+18	{
+19	    int num1, num2, result;
+20	    num1=input();
++b main
+Breakpoint 1 at 0x4014d8: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 20.
++b 10
+Breakpoint 2 at 0x401490: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 10.
++b 7
+Breakpoint 3 at 0x401488: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 7.
++b 15
+Breakpoint 4 at 0x4014a6: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 15.
++r
+Starting program: c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01/./problem03.exe 
+[New Thread 3620.0xaf4]
+[New Thread 3620.0x49f0]
+
+Breakpoint 1, main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:20
+20	    num1=input();
++4
+Undefined command: "4".  Try "help".
++n 
+
+Breakpoint 3, input () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:7
+7	}
++n
+main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:21
+21	    num2=input();
++n
+
+Breakpoint 3, input () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:7
+7	}
++n
+main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:22
+22	    result = add(num1, num2);
++p num1
+$1 = 1082130432
++q
+A debugging session is active.
+
+	Inferior 1 [process 3620] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
