@@ -1,0 +1,73 @@
++L
+11	    sum=a+b;
+12	    return sum;
+13	}
+14	void output(int a, int b, int sum){
+15	    printf("the sum of %f and %f is %f", a, b, sum);
+16	}
+17	int main()
+18	{
+19	    int num1, num2, result;
+20	    num1=input();
++b 10
+Breakpoint 1 at 0x401490: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 10.
++b 7
+Breakpoint 2 at 0x401488: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 7.
++b main
+Breakpoint 3 at 0x4014d8: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 20.
++info b
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0x00401490 in add 
+                                           at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:10
+2       breakpoint     keep y   0x00401488 in input 
+                                           at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:7
+3       breakpoint     keep y   0x004014d8 in main 
+                                           at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:20
++r
+Starting program: c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01/./problem03.exe 
+[New Thread 18508.0x4d90]
+[New Thread 18508.0x30ec]
+
+Breakpoint 3, main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:20
+20	    num1=input();
++n
+
+Breakpoint 2, input () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:7
+7	}
++n
+main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:21
+21	    num2=input();
++p num1
+$1 = 1084227584
++n
+
+Breakpoint 2, input () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:7
+7	}
++p num1
+No symbol "num1" in current context.
++p num1
+No symbol "num1" in current context.
++n
+main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:22
+22	    result = add(num1, num2);
++p num1
+$2 = 1084227584
++p num2
+$3 = 1086324736
++n
+
+Breakpoint 1, add (a=1084227584, b=1086324736)
+    at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:11
+11	    sum=a+b;
++n
+12	    return sum;
++nn
+Undefined command: "nn".  Try "help".
++n
+13	}
++q
+A debugging session is active.
+
+	Inferior 1 [process 18508] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
