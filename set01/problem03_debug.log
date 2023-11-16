@@ -122,3 +122,65 @@ A debugging session is active.
 	Inferior 1 [process 3620] will be killed.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
++l
+warning: Source file is more recent than executable.
+11	    sum=a+b;
+12	    return sum;
+13	}
+14	void output(int a, int b, int sum){
+15	    printf("the sum of %d and %d is %d", a, b, sum);
+16	}
+17	int main()
+18	{
+19	    int num1, num2, result;
+20	    num1=input();
++b 3
+Breakpoint 1 at 0x401466: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 3.
++b 10
+Breakpoint 2 at 0x401490: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 10.
++b 20
+Breakpoint 3 at 0x4014d8: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 20.
++b 22
+Breakpoint 4 at 0x4014ea: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 22.
++b 23
+Breakpoint 5 at 0x401502: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 23.
++b 15
+Breakpoint 6 at 0x4014a6: file c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c, line 15.
++r
+Starting program: c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01/./problem03.exe 
+[New Thread 17688.0x3804]
+[New Thread 17688.0x4e2c]
+
+Breakpoint 3, main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:20
+20	    num1=input();
++n
+
+Breakpoint 1, input () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:4
+4	printf("enter the number: ");
++n
+5	scanf("%d", &num);
++3
+Undefined command: "3".  Try "help".
++n
+6	return num;
++p num
+$1 = 1077936128
++p &num
+$2 = (int *) 0x61feec
++n
+7	}
++n
+main () at c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem03.c:21
+21	    num2=input();
++p num1
+$3 = 1077936128
++op num2
+Undefined command: "op".  Try "help".
++p num2
+$4 = 0
++quit
+A debugging session is active.
+
+	Inferior 1 [process 17688] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
