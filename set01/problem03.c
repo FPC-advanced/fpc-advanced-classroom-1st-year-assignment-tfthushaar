@@ -2,7 +2,7 @@
 int input(){
    int num;
 printf("enter the number: ");
-scanf("%f", &num);
+scanf("%d", &num);
 return num;
 }
 
@@ -12,7 +12,7 @@ int add(int a, int b){
     return sum;
 }
 void output(int a, int b, int sum){
-    printf("the sum of %f and %f is %f", a, b, sum);
+    printf("the sum of %d and %d is %d", a, b, sum);
 }
 int main()
 {
