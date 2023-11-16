@@ -1,0 +1,12 @@
++l
+12	}
+13	void output(float base, float height, float area)
+14	{
+15	    printf("the base is %f\n",base );
+16	    printf("the height is %f\n", height);
+17	    printf("the area is %f\n", area);
+18	}
+19	int main(){
+20	    float base, height, area;
+21	    input(&base, &height);
++quit
