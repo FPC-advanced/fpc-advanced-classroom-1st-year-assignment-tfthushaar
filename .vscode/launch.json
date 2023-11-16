@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/thush/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-tfthushaar/set02",
-      "program": "c:/Users/thush/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-tfthushaar/set02/build/Debug/outDebug",
+      "cwd": "c:/Users/thush/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-tfthushaar/set03",
+      "program": "c:/Users/thush/github-classroom/FPC-advanced/fpc-advanced-classroom-1st-year-assignment-tfthushaar/set03/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
