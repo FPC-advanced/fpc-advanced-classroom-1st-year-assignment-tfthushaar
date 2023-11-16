@@ -6,3 +6,8 @@ No symbol table is loaded.  Use the "file" command.
 +l
 No symbol table is loaded.  Use the "file" command.
 +quit
++l
+No symbol table is loaded.  Use the "file" command.
++l
+No symbol table is loaded.  Use the "file" command.
++q
