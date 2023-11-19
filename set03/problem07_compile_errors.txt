@@ -1,0 +1,13 @@
+Compilation started at 11/17/2023, 11:29:59 AM
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem07.c: In function 'find_length':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem07.c:27:19: warning: implicit declaration of function 'sqrt' [-Wimplicit-function-declaration]
+     l->distance = sqrt(pow(l->p2.x - l->p1.x, 2) + pow(l->p2.y - l->p1.y, 2));
+                   ^~~~
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem07.c:27:19: warning: incompatible implicit declaration of built-in function 'sqrt'
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem07.c:27:19: note: include '<math.h>' or provide a declaration of 'sqrt'
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem07.c:27:24: warning: implicit declaration of function 'pow' [-Wimplicit-function-declaration]
+     l->distance = sqrt(pow(l->p2.x - l->p1.x, 2) + pow(l->p2.y - l->p1.y, 2));
+                        ^~~
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem07.c:27:24: warning: incompatible implicit declaration of built-in function 'pow'
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set03\problem07.c:27:24: note: include '<math.h>' or provide a declaration of 'pow'
+Compilation finished at 11/17/2023, 11:30:00 AM
