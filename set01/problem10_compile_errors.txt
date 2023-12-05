@@ -8,3 +8,9 @@ Compilation started at 11/2/2023, 9:43:44 AM
 Compilation finished at 11/2/2023, 9:43:45 AM
 Compilation started at 11/2/2023, 9:43:59 AM
 Compilation finished at 11/2/2023, 9:44:00 AM
+Compilation started at 12/5/2023, 1:24:03 PM
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem10.c: In function 'stringcompare':
+c:\Users\thush\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-tfthushaar\set01\problem10.c:11:12: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+     return strcmp(string1, string2);
+            ^~~~~~
+Compilation finished at 12/5/2023, 1:24:04 PM
