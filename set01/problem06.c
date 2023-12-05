@@ -2,9 +2,9 @@
 
 int input(int *a, int *b, int *c){
     printf("enter the three numbers: ");
-    scanf("%d", &*a);
-    scanf("%d", &*b);
-    scanf("%d", &*c);
+    scanf("%d", a);
+    scanf("%d", b);
+    scanf("%d", c);
     return *a;
 }
 void compare(int a, int b, int c, int *largest){
