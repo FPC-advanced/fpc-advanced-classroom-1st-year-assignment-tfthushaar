@@ -16,7 +16,6 @@
         i++;
         fact *= i;
     }
-    
     return false;
 }
  void output(bool t){
