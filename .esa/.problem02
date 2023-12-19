@@ -4,10 +4,10 @@
 #include <stdbool.h>
 
 int input(int *n, int *array1) {
-    printf("Enter the size of the array: ");
+    printf("enter the size of the array: ");
     scanf("%d", n);
 
-    printf("Enter the numbers:\n");
+    printf("enter the numbers:\n");
     for (int i = 0; i < *n; i++) {
         scanf("%d", &array1[i]);
     }
@@ -34,7 +34,7 @@ int fact_nums(int size, int *array1, int *array2) {
 }
 
 void output(int *array2, int count) {
-    printf("Factorial numbers are: ");
+    printf("factorial numbers are: ");
     for (int i = 0; i < count; i++) {
         printf("%d ", array2[i]);
     }
