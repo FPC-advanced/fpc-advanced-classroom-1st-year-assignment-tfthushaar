@@ -4,7 +4,7 @@
 #define MAX_NAME_LENGTH 40
 #define NUM_PLAYERS 4
 
-struct fritacole {
+typedef struct {
     char name[MAX_NAME_LENGTH];
     float height;
     char integrity;
@@ -13,26 +13,20 @@ struct fritacole {
     char discipline;
     int points;
     int fouls;
-};
+} Fritacole;
 
-typedef struct fritacole Fritacole;
-
-struct team {
+typedef struct {
     Fritacole players[NUM_PLAYERS];
     int total_points;
     int total_fouls;
-};
+} Team;
 
-typedef struct team Team;
-
-struct game {
+typedef struct {
     Team t1;
     Team t2;
     int total_points;
     int total_fouls;
-};
-
-typedef struct game Game;
+} Game;
 
 void player_info(Fritacole *player) {
     printf("Enter player name: ");
@@ -83,14 +77,36 @@ void initialize_team(Team *team) {
     team->total_fouls = 0;
 }
 
+int verify_better_team(Game *game) {
+    float height_factor_t1 = 0, height_factor_t2 = 0;
+
+    for (int i = 0; i < NUM_PLAYERS; i++) {
+        height_factor_t1 += game->t1.players[i].height;
+        height_factor_t2 += game->t2.players[i].height;
+    }
+
+    height_factor_t1 /= NUM_PLAYERS;
+    height_factor_t2 /= NUM_PLAYERS;
+
+    int adjusted_points_t1 = game->t1.total_points + (int)height_factor_t1;
+    int adjusted_points_t2 = game->t2.total_points + (int)height_factor_t2;
+
+    if (adjusted_points_t1 > adjusted_points_t2)
+        return 1;
+    else if (adjusted_points_t1 < adjusted_points_t2)
+        return -1;
+    else
+        return 0;
+}
+
 int main() {
     Game g;
     printf("Enter the information for team 1:\n");
-    team_info(&g.t1, NUM_PLAYERS);
     initialize_team(&g.t1);
+    team_info(&g.t1, NUM_PLAYERS);
     printf("Enter the information for team 2:\n");
-    team_info(&g.t2, NUM_PLAYERS);
     initialize_team(&g.t2);
+    team_info(&g.t2, NUM_PLAYERS);
     print_game_info(&g);
 
     int result = verify_win(&g);
@@ -101,5 +117,14 @@ int main() {
     else
         printf("It's a tie!\n");
 
+    int better_team_result = verify_better_team(&g);
+    if (better_team_result == 1)
+        printf("Team 1 is the better team!\n");
+    else if (better_team_result == -1)
+        printf("Team 2 is the better team!\n");
+    else
+        printf("The better team cannot be determined!\n");
+
     return 0;
 }
+
