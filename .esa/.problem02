@@ -1,8 +1,48 @@
 //Write a program to return all factorial numbers in an array of numbers.
 
 #include <stdio.h>
-#include<stdbool.h>
-int input(int *n, int *array1);
-bool is_factorial(int n);
-int fact_nums(int size, int *array1, int *array2);
-void output(int *array2, int count);
+#include <stdbool.h>
+int input(int *n, int *array1) {
+    printf("Enter the size of the array: ");
+    scanf("%d", n);
+
+    printf("Enter the numbers:\n");
+    for (int i = 0; i < *n; i++) {
+        scanf("%d", &array1[i]);
+    }
+}
+bool is_factorial(int n) {
+    int i = 1, fact = 1;
+
+    while (fact < n) {
+        i++;
+        fact *= i;
+    }
+    return (fact == n);
+}
+int fact_nums(int size, int *array1, int *array2) {
+   int count = 0;
+    for (int i = 0; i < size; i++) {
+        if (is_factorial(array1[i])) {
+            array2[count] = array1[i];
+            count++;
+        }
+    }
+    return count;
+}
+void output(int *array2, int count) {
+    printf("Factorial numbers are: ");
+    for (int i = 0; i < count; i++) {
+        printf("%d ", array2[i]);
+    }
+    printf("\n");
+}
+int main() {
+    int n;
+    int array1[100]; 
+    int array2[100]; 
+    input(&n, array1);
+    int count = fact_nums(n, array1, array2);
+    output(array2, count);
+    return 0;
+}
