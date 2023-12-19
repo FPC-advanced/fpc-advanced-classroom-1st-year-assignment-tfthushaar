@@ -25,7 +25,7 @@
 int main() {
     int num;
     int isfactorialnum;
-    intput(&num);
+    input(&num);
     isfactorialnum = is_factorial(num);
     output(isfactorialnum);
     return 0;
