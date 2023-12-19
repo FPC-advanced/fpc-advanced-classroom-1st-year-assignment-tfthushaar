@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_NAME_LENGTH 40
+#define NUM_PLAYERS 4
+
+struct fritacole {
+    char name[MAX_NAME_LENGTH];
+    float height;
+    char integrity;
+    char interest;
+    char ability;
+    char discipline;
+    int points;
+    int fouls;
+};
+
+typedef struct fritacole Fritacole;
+
+struct team {
+    Fritacole players[NUM_PLAYERS];
+    int total_points;
+    int total_fouls;
+};
+
+typedef struct team Team;
+
+struct game {
+    Team t1;
+    Team t2;
+    int total_points;
+    int total_fouls;
+};
+
+typedef struct game Game;
+
+void player_info(Fritacole *player) {
+    printf("Enter player name: ");
+    scanf("%s", player->name);
+    printf("Enter height: ");
+    scanf("%f", &player->height);
+    printf("Enter integrity: ");
+    scanf(" %c", &player->integrity);
+    printf("Enter interest: ");
+    scanf(" %c", &player->interest);
+    printf("Enter ability: ");
+    scanf(" %c", &player->ability);
+    printf("Enter discipline: ");
+    scanf(" %c", &player->discipline);
+    printf("Enter points: ");
+    scanf("%d", &player->points);
+    printf("Enter fouls: ");
+    scanf("%d", &player->fouls);
+}
+
+void team_info(Team *team, int num_players) {
+    printf("Team info:\n");
+    for (int i = 0; i < num_players; i++) {
+        printf("Player %d:\n", i + 1);
+        player_info(&team->players[i]);
+        team->total_points += team->players[i].points;
+        team->total_fouls += team->players[i].fouls;
+    }
+}
+
+void print_game_info(Game *game) {
+    printf("Game info:\n");
+    printf("Total points: %d\n", game->total_points);
+    printf("Total fouls: %d\n", game->total_fouls);
+}
+
+int verify_win(Game *game) {
+    if (game->t1.total_points > game->t2.total_points)
+        return 1;
+    else if (game->t1.total_points < game->t2.total_points)
+        return -1;
+    else
+        return 0;
+}
+
+void initialize_team(Team *team) {
+    team->total_points = 0;
+    team->total_fouls = 0;
+}
+
+int main() {
+    Game g;
+    printf("Enter the information for team 1:\n");
+    team_info(&g.t1, NUM_PLAYERS);
+    initialize_team(&g.t1);
+    printf("Enter the information for team 2:\n");
+    team_info(&g.t2, NUM_PLAYERS);
+    initialize_team(&g.t2);
+    print_game_info(&g);
+
+    int result = verify_win(&g);
+    if (result == 1)
+        printf("Team 1 wins!\n");
+    else if (result == -1)
+        printf("Team 2 wins!\n");
+    else
+        printf("It's a tie!\n");
+
+    return 0;
+}
