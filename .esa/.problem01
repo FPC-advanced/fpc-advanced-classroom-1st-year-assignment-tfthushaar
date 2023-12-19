@@ -1,0 +1,28 @@
+//Write a program to find if a given number is a factorial number. 1(0!) and (1!), 2(2!), 6(3!)
+
+#include<stdio.h>
+#include<stdbool.h>
+ void input(int *n){
+    printf("enter a number: ");
+    scanf("%d", n);
+ }
+ bool is_factorial(int n){
+    int fact=1;
+    int i=1;
+    while(i<n){
+        i++;
+        fact *=i;}
+        return (fact==n);
+ }
+ void output(bool t){
+    if(t){printf("the number is a factorial");}
+    else{printf("the number is not a factorial");}
+ }
+int main() {
+    int num;
+    int isfactorialnum;
+    intput(&num);
+    isfactorialnum = is_factorial(num);
+    output(isfactorialnum);
+    return 0;
+}

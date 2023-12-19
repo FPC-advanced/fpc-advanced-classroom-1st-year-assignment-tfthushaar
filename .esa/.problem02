@@ -1,0 +1,8 @@
+//Write a program to return all factorial numbers in an array of numbers.
+
+#include <stdio.h>
+#include<stdbool.h>
+int input(int *n, int *array1);
+bool is_factorial(int n);
+int fact_nums(int size, int *array1, int *array2);
+void output(int *array2, int count);
