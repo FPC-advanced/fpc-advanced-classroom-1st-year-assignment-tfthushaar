@@ -7,13 +7,18 @@
     scanf("%d", n);
  }
  bool is_factorial(int n){
-    int fact=1;
-    int i=1;
-    while(i<n){
+ int fact = 1;
+    int i = 1;
+    while (fact <= n) {
+        if (fact == n) {
+            return true;
+        }
         i++;
-        fact *=i;}
-        return (fact==n);
- }
+        fact *= i;
+    }
+    
+    return false;
+}
  void output(bool t){
     if(t){printf("the number is a factorial");}
     else{printf("the number is not a factorial");}
